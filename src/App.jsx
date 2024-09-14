@@ -27,6 +27,9 @@ function App() {
       </div>
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
+      <div className="recuperar-c">
+      <RecuperarContrasena />
+      </div>
       </p>
     </>
   )
