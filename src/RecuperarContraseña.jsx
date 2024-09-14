@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import './RecuperarContraseña.css';
+import './RecuperarContrasena.css';
 
-const RecuperarContraseña = () => {
+const RecuperarContrasena = () => {
   const [email, setEmail] = useState('');
   const [mensaje, setMensaje] = useState('');
 
@@ -12,7 +12,7 @@ const RecuperarContraseña = () => {
   };
 
   return (
-    <div className="RecuperarContraseña">
+    <div className="RecuperarContrasena">
       <h2>Recuperar Contraseña</h2>
       <form onSubmit={recuperador}>
         <label htmlFor="email">Correo Electrónico</label>
@@ -30,4 +30,4 @@ const RecuperarContraseña = () => {
   );
 };
 
-export default RecuperarContraseña;
+export default RecuperarContrasena;
