@@ -1,5 +1,5 @@
 import react, {useState} from react
-import './RecuperarContraseña.css';
+import './RecuperarContraseña.css'
 
 const RecuperarContra =() =>{
     const [email,setEmail] = useState('');
