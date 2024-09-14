@@ -1,0 +1,32 @@
+.RecuperarContra {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+  }
+  
+  .RecuperarContra h2 {
+    margin-bottom: 20px;
+  }
+  
+  .RecuperarContra form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .RecuperarContra label {
+    margin-bottom: 8px;
+  }
+  
+  .RecuperarContra input {
+    margin-bottom: 12px;
+    padding: 8px;
+    font-size: 16px;
+  }
+  
+  .RecuperarContra button {
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+  }
