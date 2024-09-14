@@ -1,31 +1,32 @@
-import react, {useState} from react
+import React, { useState } from 'react';
 
-const RecuperarContra =() =>{
-    const [email,setEmail] = useState('');
-    const [mensaje,setMensaje] = useState('');
+const RecuperarContra = () => {
+  const [email, setEmail] = useState('');
+  const [mensaje, setMensaje] = useState('');
 
-    const recuperador = (e)=>{
-    e.preventDefault();
-    //to do logica recuperar contraseña
-      setMensaje('se envio el enlace para recuperar la contraseña. ${email}');
-    };
-    return(
-    <div classname="RecuperarContra">
-     <h2>Recuperar Contraseña</h2>
+  const recuperador = (e) => {
+    e.preventDefault(); 
+    // To do: lógica para recuperar la contraseña
+    setMensaje(`Se envió el enlace para recuperar la contraseña a ${email}`);
+  };
+
+  return (
+    <div className="RecuperarContra">
+      <h2>Recuperar Contraseña</h2>
       <form onSubmit={recuperador}>
-       <label htmlFor="email">Correo Electronico</label>
+        <label htmlFor="email">Correo Electrónico</label>
         <input 
-        type="email"
-        id="email"
-        value={email}
-        onChange={(e)=> setEmail(e.target.value)
-        }required
-        >
-            <button type ="submit">Enviar</button>
-        </input>
+          type="email"
+          id="email"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+          required
+        />
+        <button type="submit">Enviar</button>
       </form>
-    {mensaje && <p> {mensaje}
-      </p>}
-  </div>  
-);};
-export default RecuperarContra
+      {mensaje && <p>{mensaje}</p>}
+    </div>
+  );
+};
+
+export default RecuperarContra;
