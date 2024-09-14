@@ -3,7 +3,7 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import './RecuperarContraseña.css'
-import RecuperarContra from './RecuperarContraseña'
+import RecuperarContraseña from './RecuperarContraseña.jsx';
 
 function App() {
   const [count, setCount] = useState(0)
