@@ -1,32 +1,52 @@
-.RecuperarContraseña {
-    max-width: 400px;
-    margin: 0 auto;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-  }
-  
-  .RecuperarContraseña h2 {
-    margin-bottom: 20px;
-  }
-  
-  .RecuperarContraseña form {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .RecuperarContraseña label {
-    margin-bottom: 8px;
-  }
-  
-  .RecuperarContraseña input {
-    margin-bottom: 12px;
-    padding: 8px;
-    font-size: 16px;
-  }
-  
-  .RecuperarContraseña button {
-    padding: 10px;
-    font-size: 16px;
-    cursor: pointer;
-  }
+
+.Recuperar-Contrasena {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9;
+}
+
+.Recuperar-Contrasena h2 {
+  margin-bottom: 20px;
+  font-size: 1.5em;
+}
+
+.Recuperar-Contrasena form {
+  display: flex;
+  flex-direction: column;
+}
+
+.Recuperar-Contrasena label {
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.Recuperar-Contrasena input {
+  padding: 10px;
+  margin-bottom: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1em;
+}
+
+.Recuperar-Contrasena button {
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+.Recuperar-Contrasena button:hover {
+  background-color: #0056b3;
+}
+
+.Recuperar-Contrasena p {
+  margin-top: 10px;
+  color: #333;
+}

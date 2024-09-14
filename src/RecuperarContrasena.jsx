@@ -12,7 +12,7 @@ const RecuperarContrasena = () => {
   };
 
   return (
-    <div className="RecuperarContrasena">
+    <div className="Recuperar-Contrasena">
       <h2>Recuperar Contraseña</h2>
       <form onSubmit={recuperador}>
         <label htmlFor="email">Correo Electrónico</label>
