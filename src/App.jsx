@@ -1,56 +1,35 @@
-import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
-import { useState } from 'react';
-import reactLogo from './assets/react.svg';
-import viteLogo from '/vite.svg';
+import React from 'react';
 import './App.css';
-import RecuperarContrasena from './RecuperarContrasena.jsx';
+import LoginForm from './components/Sign';
+import RegisterForm from './components/Signup';
 
 function App() {
-  const [count, setCount] = useState(0);
+    const [isActive, setIsActive] = useState(false);
 
+  const toggleActiveClass = () => {
+    setIsActive(!isActive);
+    };
   return (
-    <Router>
-      <div>
-        <nav>
-          <ul>
-            <li>
-              <Link to="/">Home</Link>
-            </li>
-            <li>
-              <Link to="/recuperar">Recuperar Contraseña</Link>
-            </li>
-          </ul>
-        </nav>
+    <div className={`container ${isActive ? 'active' : ''}`} id="container">
+    <RegisterForm />
+    <LoginForm />
+
+
+      <div className="toggle-container">
+        <div className="toggle">
+          <div className="toggle-panel toggle-left">
+            <h1>Welcome Back!</h1>
+            <p>Enter your personal details to use all of site features</p>
+            <button className="hidden" id="login">Sign In</button>
+          </div>
+          <div className="toggle-panel toggle-right">
+            <h1>Hello, Friend!</h1>
+            <p>Register with your personal details to use all of site features</p>
+            <button className="hidden" id="register">Sign Up</button>
+          </div>
+        </div>
       </div>
-      <Routes>
-        <Route
-          path="/"
-          element={
-            <div>
-              <a href="https://vitejs.dev" target="_blank" rel="noopener noreferrer">
-                <img src={viteLogo} className="logo" alt="Vite logo" />
-              </a>
-              <a href="https://react.dev" target="_blank" rel="noopener noreferrer">
-                <img src={reactLogo} className="logo react" alt="React logo" />
-              </a>
-              <h1>Vite + React</h1>
-              <div className="card">
-                <button onClick={() => setCount(count + 1)}>
-                  count is {count}
-                </button>
-                <p>
-                  Edit <code>src/App.jsx</code> and save to test HMR
-                </p>
-              </div>
-              <p className="read-the-docs">
-                Click on the Vite and React logos to learn more
-              </p>
-            </div>
-          }
-        />
-        <Route path="/recuperar" element={<RecuperarContrasena />} />
-      </Routes>
-    </Router>
+    </div>
   );
 }
 
