@@ -20,7 +20,7 @@ const RecoverPass = () => {
   return (
     <div className="Recover_password">
       <div className="header_recover">
-        <h2 className="text_recover">Recuperar Contraseña</h2>
+        <h2 className="text_recover">Recuperar</h2>
         <div className="underline_recover"></div>
       </div>
       <div className="inputs_recover">
