@@ -34,7 +34,7 @@ const Header = () => {
           <option value="es">ES</option>
           <option value="en">EN</option>
         </select>
-        <button className="cta-button">Nostros</button>
+        <button className="cta-button">Nosotros</button>
         <FaUserCircle className="user-icon" size={28} />
       </div>
     </header>
