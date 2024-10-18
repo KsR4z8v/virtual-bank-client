@@ -4,8 +4,10 @@ import Signup from "../components/forms/Signup";
 import Sign from "../components/forms/Sign";
 import RecoverPass from "../components/forms/RecoverPass";
 import UpdatePass from "../components/forms/UpdatePass";
+import Adminview from "../components/admin/Adminview";
 import { UserContextProvider } from "../context/userContext";
 import "./app.css";
+
 
 const router = createBrowserRouter([
   {
@@ -16,8 +18,10 @@ const router = createBrowserRouter([
       { path: "signup", element: <Signup /> },
       { path: "recoverpass", element: <RecoverPass /> },
       { path: "newpass", element: <UpdatePass /> },
+     
     ],
-  },
+   
+  } ,{ path: "adminview", element: <Adminview />}
 ]);
 
 function App() {

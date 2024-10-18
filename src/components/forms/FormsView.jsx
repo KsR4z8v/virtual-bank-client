@@ -12,7 +12,6 @@ function FormsView() {
       <Header />
       <div className="container-forms">
         <Outlet />
-
         <Info />
       </div>
     </>
