@@ -16,7 +16,6 @@ ChartJS.register(
   Legend
 );
 
-
 const Navbar = ({ setActiveSection }) => {
   return (
     <nav className="navbar2">  
@@ -53,23 +52,23 @@ export default function Adminview() {
   const [darkMode, setDarkMode] = useState(false);
   
   const sampleUsers = [
-    { id: 1, name: "Juan Perez", type: "Usuario", date: "01/01/2024" },
-    { id: 2, name: "Maria Gomez", type: "Admin", date: "02/02/2024" },
-    { id: 3, name: "Carlos Lopez", type: "Usuario", date: "15/02/2024" },
-    { id: 4, name: "Victoria Escobar", type: "Admin", date: "30/03/2024" },
-    { id: 5, name: "Daniela Rodas", type: "Usuario", date: "25/04/2024" },
+    { id: 1879, name: "Juan Perez", type: "Usuario", date: "01/01/2024", balance:"21,700.000" },
+    { id: 2345, name: "Maria Gomez", type: "Admin", date: "02/02/2024", balance:"18,700.000" },
+    { id: 3342, name: "Carlos Lopez", type: "Usuario", date: "15/02/2024", balance:"15,700.000" },
+    { id: 4123, name: "Victoria Escobar", type: "Admin", date: "30/03/2024", balance:"17,700.000" },
+    { id: 5567, name: "Daniela Rodas", type: "Usuario", date: "25/04/2024", balance:"18,100.000" },
   ];
   
   const sampleTransactions = [
-    {id:202, type: "Corriente", amount: "$1,000.000", date: "05/05/2024" },
-    {id:504, type: "Ahorros", amount: "$2,500.000", date: "06/08/2024" },
-    {id:603, type: "Corriente", amount: "$4,507.800", date: "15/08/2024" },
+    { id:202, type: "Corriente", amount: "$5,600.000", date: "05/05/2024" },
+    { id:504, type: "Ahorros", amount: "$6,800.000", date: "06/08/2024" },
+    { id:603, type: "Corriente", amount: "$9,300.000", date: "15/08/2024" },
   ];
 
   const sampleReports = [
-    {id:100, type: "Reporte de Transacciones", date: "20/09/2024" },
-    {id:200, type: "Reporte de Usuarios", date: "25/09/2024"},
-    {id:300, type: "Errores en el Sistema", date: "09/10/2024"},
+    { id:100, type: "Reporte de Transacciones", date: "20/09/2024" },
+    { id:200, type: "Reporte de Usuarios", date: "25/09/2024"},
+    { id:300, type: "Errores en el Sistema", date: "09/10/2024"},
   ];
   
   const fetchUsers = () => {
@@ -166,7 +165,7 @@ export default function Adminview() {
     );
   };
   
-  
+
   const renderSection = () => {
     switch (activeSection) {
       case 'usuarios':
@@ -179,11 +178,11 @@ export default function Adminview() {
           {showUsers && (
             <>
               <div className="user-list-header">
-                <span>Foto</span>
                 <span>ID</span>
                 <span>Nombre</span>
                 <span>Tipo</span>
                 <span>Fecha</span>
+                <span>Balance</span>
               </div>
               <ul className="user-list">
                 {users.map((user) => (
@@ -194,6 +193,7 @@ export default function Adminview() {
                       <span>{user.name}</span>
                       <span>{user.type}</span>
                       <span>{user.date}</span>
+                      <span>{user.balance}</span>
                     </div>
                   </li>
                 ))}
@@ -219,7 +219,7 @@ export default function Adminview() {
         <div className="section">
           {!editingTransaction && showTransactions && (
             <>
-              <div className="user-list-header">
+              <div className="list-header">
                 <span>ID</span>
                 <span>Tipo</span>
                 <span>Monto</span>
@@ -280,7 +280,7 @@ export default function Adminview() {
         <div className="section">
           {!editingReport && showReports && (
             <>
-              <div className="user-list-header">
+              <div className="list-header">
                 <span>ID</span>
                 <span>Tipo</span>
                 <span>Fecha</span>
@@ -335,12 +335,11 @@ export default function Adminview() {
         {!editingUser && showUsers && (
           <>
             <div className="user-list-header">
-              <span>Foto</span>
               <span>ID</span>
               <span>Nombre</span>
               <span>Tipo</span>
               <span>Fecha</span>
-              <span>Edicion</span>
+              <span>Editar</span>
             </div>
             <ul className="user-list">
               {users.map((user) => (
