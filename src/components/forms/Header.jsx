@@ -1,7 +1,9 @@
 import "./header.css";
 import { FaUserCircle } from "react-icons/fa";
 import { FaMoneyCheckAlt } from "react-icons/fa";
+import { useNavigate } from "react-router-dom";
 const Header = () => {
+  const navigate = useNavigate();
   return (
     <header className="header">
       <div className="logo">
@@ -14,15 +16,7 @@ const Header = () => {
           <li>
             <a href="#inicio">Inicio</a>
           </li>
-          <li>
-            <a href="#productos">Productos</a>
-          </li>
-          <li>
-            <a href="#inversiones">Inversiones</a>
-          </li>
-          <li>
-            <a href="#prestamos">Préstamos</a>
-          </li>
+
           <li>
             <a href="#soporte">Soporte</a>
           </li>
@@ -30,10 +24,13 @@ const Header = () => {
       </nav>
 
       <div className="header-actions">
-        <select className="language-select">
+        {/* <select className="language-select">
           <option value="es">ES</option>
           <option value="en">EN</option>
-        </select>
+        </select> */}
+        <button onClick={() => navigate("/forms")} className="cta-button">
+          Iniciar{" "}
+        </button>
         <button className="cta-button">Nosotros</button>
         <FaUserCircle className="user-icon" size={28} />
       </div>

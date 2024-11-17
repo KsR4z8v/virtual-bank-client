@@ -17,7 +17,7 @@
 
 .navbar2 h2 {
    margin: 0;
-   margin-right: auto; 
+   margin-right: auto;
    text-align: left;
    padding-left: 10px;
    font-size: 1.5em;
@@ -46,8 +46,8 @@
 }
 
 .panel-control {
-   display: flex; 
-   flex-direction: row; 
+   display: flex;
+   flex-direction: row;
    padding: 10px;
    background-color: #f5f5f5;
    flex: 1;
@@ -97,40 +97,40 @@ button:hover {
    transition: all 0.5s ease-in-out;
 }
 
- .section h2 {
+.section h2 {
    cursor: pointer;
    color: #0a0a0a;
    transition: color 0.3s;
    text-align: center;
-   margin-bottom: 20px; 
+   margin-bottom: 20px;
 
 }
- 
- .section h2:hover {
+
+.section h2:hover {
    color: #555;
-    
+
 }
- 
- .section.expanded {
+
+.section.expanded {
    height: auto;
- }
- 
- .ul{
+}
+
+.ul {
    list-style: none;
    padding: 0;
    margin: 0;
    width: 100%;
- }
- 
- .action-button{
-  display: flex;
-  justify-content: space-between;
-  gap: 10px;
-  margin-top: 20px; 
-  width: 100%;
 }
- 
- button {
+
+.action-button {
+   display: flex;
+   justify-content: space-between;
+   gap: 10px;
+   margin-top: 20px;
+   width: 100%;
+}
+
+button {
    margin: 5px;
    padding: 10px 15px;
    color: white;
@@ -138,25 +138,25 @@ button:hover {
    border-radius: 5px;
    background-color: #0b0b0b;
    cursor: pointer;
-   transition: background-color 0.3s; 
+   transition: background-color 0.3s;
 }
- 
- button:hover {
+
+button:hover {
    background-color: #212425;
- }
- 
- .sections {
+}
+
+.sections {
    flex: 1;
-   padding: 20px; 
+   padding: 20px;
    display: flex;
    flex-direction: column;
    gap: 20px;
-   padding: 20px; 
+   padding: 20px;
    overflow-y: auto;
 }
- 
-.content-box{
-   display:  flex;
+
+.content-box {
+   display: flex;
    flex-direction: column;
    flex-wrap: wrap;
    gap: 20px;
@@ -166,38 +166,38 @@ button:hover {
    padding: 20px;
    background-color: #f9f9f9;
    border-radius: 8px;
-   margin-bottom:10px;
+   margin-bottom: 10px;
    margin-top: 5px;
    overflow-y: auto;
 }
 
- .user-circle {
+.user-circle {
    display: flex;
    flex-direction: column;
    align-items: center;
    margin: 20px 0;
 }
- 
- .circle {
+
+.circle {
    width: 60px;
    height: 60px;
    border-radius: 50%;
    background-color: #ccc;
    margin-bottom: 10px;
- }
+}
 
- .admin-container {
+.admin-container {
    font-family: Arial, sans-serif;
 }
 
 .panel-header {
    flex: 0 0 auto;
-   text-align: center; 
+   text-align: center;
    margin-bottom: 0px;
 }
 
 .admin-title {
-   font-size: 2em; 
+   font-size: 2em;
 }
 
 .admin-subtitle {
@@ -205,14 +205,14 @@ button:hover {
 }
 
 .underline {
-   width:60%;
+   width: 60%;
    height: 6px;
    background: #616161;
    border-radius: 9px;
    margin: 5px auto 0;
 }
 
-.user-profile{
+.user-profile {
    display: flex;
    align-items: center;
    gap: 10px;
@@ -226,7 +226,7 @@ button:hover {
    background-color: #ccc;
 }
 
-.user-list{
+.user-list {
    list-style: none;
    padding: 0;
    margin: 0;
@@ -234,14 +234,14 @@ button:hover {
    overflow-y: auto;
 }
 
-.user-list-header{
-  display: flex;
-  justify-content: space-between;
-  padding: 10px;
-  padding-left: 80px;
-  font-weight: bold;
-  border-bottom: 1px solid #ddd;
-  background-color: #f0f0f0;
+.user-list-header {
+   display: flex;
+   justify-content: space-between;
+   padding: 10px;
+   padding-left: 80px;
+   font-weight: bold;
+   border-bottom: 1px solid #ddd;
+   background-color: #f0f0f0;
 }
 
 .user-list-header span {
@@ -250,7 +250,7 @@ button:hover {
    margin-left: 20px;
 }
 
- .user-item {
+.user-item {
    display: flex;
    justify-content: space-between;
    margin-bottom: 5px;
@@ -268,14 +268,17 @@ button:hover {
 .section-title {
    font-size: 20px;
    margin: 10px 0;
- }
+}
 
-.user-section, .roles-section, .estadisticas-section, .configuraciones-section {
+.user-section,
+.roles-section,
+.estadisticas-section,
+.configuraciones-section {
    margin: 10px 0;
    padding: 10px;
-   border: 1px solid #ddd; 
+   border: 1px solid #ddd;
    border-radius: 5px;
-   align-items: center; 
+   align-items: center;
 }
 
 .chart-container {
@@ -288,13 +291,13 @@ button:hover {
    flex-wrap: wrap;
 }
 
-.chart-container > div {
+.chart-container>div {
    flex: 1;
    min-width: 300px;
    max-width: 40%;
 }
 
-.chart-item{
+.chart-item {
    display: flex;
    flex-direction: column;
    align-items: center;
@@ -303,10 +306,10 @@ button:hover {
    margin: 0 50px;
 }
 
-.config-options{
+.config-options {
    display: flex;
-   gap: 20px; 
-   flex-wrap: wrap; 
+   gap: 20px;
+   flex-wrap: wrap;
    justify-content: center;
 }
 
@@ -323,28 +326,28 @@ button:hover {
    margin-top: 50px;
    margin-bottom: 50px;
 }
- 
- .config-detail {
-   margin-top: 20px;
- }
- 
- .config-detail label {
-   display: flex;
-   align-items: center;
-   gap: 10px;
- }
 
- .switch {
+.config-detail {
+   margin-top: 20px;
+}
+
+.config-detail label {
    display: flex;
    align-items: center;
    gap: 10px;
- }
- 
- .switch input {
+}
+
+.switch {
+   display: flex;
+   align-items: center;
+   gap: 10px;
+}
+
+.switch input {
    display: none;
- }
- 
- .switch .slider {
+}
+
+.switch .slider {
    width: 40px;
    height: 20px;
    background-color: #ccc;
@@ -352,13 +355,13 @@ button:hover {
    position: relative;
    cursor: pointer;
    transition: background-color 0.2s;
- }
- 
- .switch input:checked + .slider {
+}
+
+.switch input:checked+.slider {
    background-color: #2196F3;
- }
- 
- .slider::before {
+}
+
+.slider::before {
    content: "";
    position: absolute;
    width: 18px;
@@ -368,13 +371,13 @@ button:hover {
    top: 1px;
    left: 1px;
    transition: transform 0.2s;
- }
- 
- input:checked + .slider::before {
-   transform: translateX(20px);
- }
+}
 
- .list-header {
+input:checked+.slider::before {
+   transform: translateX(20px);
+}
+
+.list-header {
    display: flex;
    justify-content: space-between;
    flex-direction: row;
@@ -382,44 +385,44 @@ button:hover {
    font-weight: bold;
    border-bottom: 1px solid #ddd;
    background-color: #f0f0f0;
-   padding-left: 90px; 
+   padding-left: 90px;
 }
- 
- .list-header span {
+
+.list-header span {
    flex: 1;
- }
+}
 
- .card-header{
-    position: relative;
- }
+.card-header {
+   position: relative;
+}
 
- .circle {
+.circle {
    width: 60px;
    height: 60px;
    background-color: #ccc;
    border-radius: 50%;
-   right: 0; 
+   right: 0;
 }
 
 .search-container {
    margin-bottom: 15px;
- }
- 
- label {
+}
+
+label {
    text-align: center;
    display: block;
    margin-bottom: 5px;
    font-weight: bold;
- }
- 
- input {
+}
+
+input {
    width: 100%;
-   padding: 10px; 
+   padding: 10px;
    border: 1px solid #ccc;
    border-radius: 4px;
- }
+}
 
- .user-list-header2{
+.user-list-header2 {
    display: flex;
    justify-content: space-between;
    padding: 10px;
@@ -428,37 +431,37 @@ button:hover {
    font-weight: bold;
    border-bottom: 1px solid #ddd;
    background-color: #f0f0f0;
- }
- 
- .user-list-header2 span {
-    flex: 1;
-    margin-right: 19px;
-    margin-left: 19px;
- }
+}
 
- .edit-form {
+.user-list-header2 span {
+   flex: 1;
+   margin-right: 19px;
+   margin-left: 19px;
+}
+
+.edit-form {
    display: flex;
    flex-direction: column;
    text-align: center;
    max-width: 400px;
 }
- 
- .form-group {
+
+.form-group {
    display: flex;
-   align-items: center; 
-   margin-bottom: 0px; 
- }
- 
- .form-group label {
+   align-items: center;
+   margin-bottom: 0px;
+}
+
+.form-group label {
    width: 100px;
    margin-right: 5px;
- }
- 
- .button-group {
+}
+
+.button-group {
    margin-top: 10px;
- }
- 
- .user-list-header3{
+}
+
+.user-list-header3 {
    display: flex;
    gap: 25px;
    padding: 10px;
@@ -467,15 +470,15 @@ button:hover {
    font-weight: bold;
    border-bottom: 1px solid #ddd;
    background-color: #f0f0f0;
- }
- 
- .user-list-header3 span {
-    flex: 1;
-    margin-right: 10px;
-    margin-left: 10px;
- }
+}
 
- .user-list-header4{
+.user-list-header3 span {
+   flex: 1;
+   margin-right: 10px;
+   margin-left: 10px;
+}
+
+.user-list-header4 {
    display: flex;
    gap: 40px;
    padding: 10px;
@@ -484,10 +487,10 @@ button:hover {
    font-weight: bold;
    border-bottom: 1px solid #ddd;
    background-color: #f0f0f0;
- }
- 
- .user-list-header4 span {
+}
+
+.user-list-header4 span {
    flex: 1;
    margin-left: 15px;
    margin-right: 15px;
- }
+}

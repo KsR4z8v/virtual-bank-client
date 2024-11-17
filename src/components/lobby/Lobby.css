@@ -72,26 +72,24 @@ body {
 }
 
 .dropdown-menu:hover .menu-content {
-  display: block;
+  display: flex;
+  gap: 6px;
+  flex-direction: column;
 }
 
 .info-container {
   display: flex;
   justify-content: center;
-  gap: 160px;
+  gap: 100px;
   align-items: center;
-  padding-left: 220px;
-  padding-right: 220px;
-  margin-bottom: 15px;
-  margin-top: 15px;
 }
 
 .credit-card {
   flex: 1;
-  max-width: 280px;
+  max-width: 310px;
   background-color: #2a2a2a;
   color: white;
-  border-radius: 20px;
+  border-radius: 10px;
   padding: 10px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
@@ -106,7 +104,7 @@ body {
   position: relative;
 }
 
-.radio-icon{
+.radio-icon {
   position: absolute;
   top: 1px;
   margin-left: 220px;
@@ -114,8 +112,8 @@ body {
 
 .card-name {
   font-size: 1.2em;
-  margin: 1px;
-  color:#f2f2f2;
+  margin: 0;
+  color: #f2f2f2;
   text-align: left;
 }
 
@@ -123,64 +121,78 @@ body {
   font-size: 1em;
   margin: 0.5px;
   text-align: left;
-  margin-top: 50px;
+  margin-top: 30px;
 }
 
 .card-balance {
-  font-size: 0.5em;
+  font-size: 0.7em;
   text-align: left;
 }
 
 .balance-info {
-  flex: 1;
-  background-color: #f8f475;
-  border-radius: 10px;
+  color: #000000;
+  background-color: #ffffff;
+  border-radius: 7px;
   padding: 25px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
   text-align: center;
-  margin-top: 5px;
+  width: 30%;
 }
 
 .balance-info h2 {
   margin: 0;
+  font-size: 40px;
 }
 
 .transaction-history {
   width: 100%;
   background-color: #ffffff;
-  border-radius: 10px;
+  border-radius: 1px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   padding: 10px;
 }
 
 .transaction-header {
   display: flex;
-  justify-content: space-between;
-  background-color: #f2f2f2;
+  background-color: #ececec;
   padding: 10px;
   padding-right: 150px;
+  box-sizing: border-box;
+  font-size: 18px;
   font-weight: bold;
   border-bottom: 2px solid #ddd;
 }
 
 .transaction-list {
-  max-height: 120px;
+  height: 550px;
   overflow-y: auto;
   padding: 0;
   list-style-type: none;
   margin: 0;
 }
 
+.box-loader {
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+}
+
+
 .transaction-item {
   display: grid;
   grid-template-columns: 2fr 2fr 2fr 1fr;
   justify-content: space-between;
-  padding: 10px;
+  padding: 20px;
+  box-sizing: border-box;
+  color: #000000;
   border-bottom: 1px solid #ddd;
   transition: background-color 0.2s;
 }
 
-.transaction-item:hover {
+.item:hover {
   background-color: #f9f9f9;
 }
 
@@ -200,8 +212,3 @@ body {
 .button-text:hover {
   background-color: #555;
 }
-
-
-
-
-

@@ -1,11 +1,12 @@
 import crypto from 'crypto-js'
 
+
 const useUser = () => {
     const url = import.meta.env.VITE_API_URL
     return {
         sign: async (callback, credentials) => {
             try {
-                const resp = await fetch(url + 'auth/sign', {
+                const resp = await fetch(url + '/auth', {
                     method: 'POST',
                     mode: 'cors',
                     headers: { 'content-type': 'application/json' },
@@ -13,17 +14,9 @@ const useUser = () => {
                 })
                 const data = await resp.json()
                 if (resp.ok) {
-                    callback(data)
-                } else {
-                    //console.log(data.error);
-                    if (data.error.code === 17) {
-                        callback(undefined, 'Lo sentimos, pero no encontramos ninguna cuenta con ese nombre de usuario o correo electrónico.')
-                    }
-                    if (data.error.code === 14) {
-                        callback(undefined, 'Contraseña incorrecta')
-                    }
+                    return callback(data)
                 }
-
+                callback(undefined, data.msg)
             } catch (error) {
                 callback(undefined, error.message)
             }
@@ -62,29 +55,71 @@ const useUser = () => {
                 callback(undefined, error.message)
             }
         },
-        create: async (callback, userData) => {
+        createClient: async (cb, userData) => {
             try {
-                const resp = await fetch(url + 'user', {
+                console.log(url);
+                const resp = await fetch(url + '/user/client', {
                     method: 'POST',
                     headers: { 'content-type': 'application/json' },
                     body: JSON.stringify(userData)
                 })
                 const data = await resp.json()
                 if (resp.status === 200) {
-                    callback(data)
-                } else {
-                    if (data.error.code === 10) {
-                        return callback(undefined, `El ${data.error.message} ya esta en uso`)
-                    }
-                    callback(undefined, data.error.details)
-
+                    return cb(data)
                 }
-
+                cb(undefined, data.msg)
             } catch (error) {
-                callback(undefined, error.message)
+                cb(undefined, error.message)
+            }
+        },
+        verifyAccount: async (cb, confirmData) => {
+            try {
+                const resp = await fetch(url + `/confirm-account`, {
+                    method: 'POST',
+                    headers: { 'content-type': 'application/json' },
+                    body: JSON.stringify(confirmData)
+                })
+                const data = await resp.json()
+                if (resp.status === 200) {
+                    return cb(data)
+                }
+                cb(undefined, data.msg)
+            } catch (error) {
+                cb(undefined, error.message)
+            }
+        },
+        getUserData: async (cb, userId) => {
+            try {
+                console.log(url);
+                const resp = await fetch(url + `/user/${userId}`, {
+                    method: 'GET',
+                    headers: { 'content-type': 'application/json' },
+                })
+                const data = await resp.json()
+                if (resp.status === 200) {
+                    return cb(data)
+                }
+                cb(undefined, data.msg)
+            } catch (error) {
+                cb(undefined, error.message)
+            }
+        },
+        deleteAccount: async (cb, userId) => {
+            try {
+                console.log(url);
+                const resp = await fetch(url + `/user/${userId}`, {
+                    method: 'DELETE',
+                    headers: { 'content-type': 'application/json' },
+                })
+                const data = await resp.json()
+                if (resp.status === 200) {
+                    return cb(data)
+                }
+                cb(undefined, data.msg)
+            } catch (error) {
+                cb(undefined, error.message)
             }
         }
-
     }
 }
 

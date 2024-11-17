@@ -1,12 +1,10 @@
 import { useEffect, useState, useContext } from "react";
 import useUser from "../../hooks/useUser";
 import { useNavigate } from "react-router-dom";
-import { useParams } from "react-router-dom";
 import UserContext from "../../context/userContext";
 import "./forms.css";
 
 function Sign() {
-  const { redirect } = useParams();
   const [user, setUser] = useState("");
   const [password, setPassword] = useState("");
   const [loader, setLoader] = useState(false);
@@ -29,11 +27,7 @@ function Sign() {
         }
         setLogged(true);
         window.sessionStorage.setItem("session", JSON.stringify(data.data));
-        if (redirect) {
-          navigate(`/${redirect}`);
-        } else {
-          navigate("/");
-        }
+        navigate("/lobby");
       },
       { user, password }
     );
@@ -78,23 +72,19 @@ function Sign() {
 
           <div className="forgot-password">
             <span
-              onClick={() => navigate("/recoverpass")}
+              onClick={() => navigate("/forms/recoverpass")}
               style={{ cursor: "pointer" }}
             >
               Olvidé mi contraseña
             </span>
           </div>
-
+          {loader ? <span className="loader form-loader"></span> : <></>}
           <div className="submit-container">
             <div className="submit" onClick={signHandler}>
-              {loader ? (
-                <span className="loader form-loader"></span>
-              ) : (
-                "Iniciar sesion"
-              )}
+              Iniciar sesion
             </div>
 
-            <div className="submit" onClick={() => navigate("/signup")}>
+            <div className="submit" onClick={() => navigate("/forms/signup")}>
               <b>Regístrate aquí</b>
             </div>
           </div>
