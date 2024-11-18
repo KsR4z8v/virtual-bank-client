@@ -20,6 +20,11 @@ const Header = () => {
           <li>
             <a href="#soporte">Soporte</a>
           </li>
+
+          <li>
+            <a href="#transacciones"onClick={() => navigate('/transfers')}>Transacciones</a>
+          </li>
+
         </ul>
       </nav>
 

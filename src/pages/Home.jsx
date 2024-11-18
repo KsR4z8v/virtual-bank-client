@@ -50,6 +50,12 @@ function Home() {
             personalizada en todo momento.
           </p>
         </div>
+        <footer className="footer">
+        <div className="footer-content">
+          <p>&copy; 2024 Tu Empresa. Todos los derechos reservados.</p>
+          <p>Contacto: <a href="mailto:info@tuempresa.com">info@tuempresa.com</a></p>
+        </div>
+      </footer>
       </div>
     </div>
   );

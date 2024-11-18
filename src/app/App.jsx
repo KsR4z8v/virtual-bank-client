@@ -8,6 +8,8 @@ import UpdatePass from "../components/forms/UpdatePass";
 import Home from "../pages/Home";
 import Forms from "../components/forms/Forms";
 import Adminview from "../components/admin/Adminview";
+import Transfers from "../components/forms/transfers";
+import Header from "../components/forms/Header";  
 
 import "./app.css";
 
@@ -28,6 +30,7 @@ const router = createBrowserRouter([
   },
   { path: "admin", element: <Adminview /> },
   { path: "lobby", element: <Lobby /> },
+  { path: "transfers", element: <Transfers /> },
 ]);
 
 function App() {
