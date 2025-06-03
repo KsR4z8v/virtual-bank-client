@@ -1,0 +1,19 @@
+.inputs_code {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+}
+
+.text-update-pass {
+  font-size: 30px;
+}
+
+#container_error_code {
+  color: #ff0033;
+  text-align: center;
+  margin-top: 15px;
+  font-size: 18px;
+}

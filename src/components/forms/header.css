@@ -1,0 +1,152 @@
+/* Estructura general del header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    color: black;
+    top: 0;
+    height: 50px;
+    z-index: 1000;
+}
+
+/* Estilo del logo */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.logo h1 {
+    font-size: 1.8rem;
+    margin: 0;
+    font-weight: normal;
+    color: rgb(0, 0, 0);
+}
+
+/* Estilo del navbar */
+.navbar ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul li {
+    margin-left: 30px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 1rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    color: #999;
+}
+
+/* Estilo del contenedor de acciones (lenguaje, login, usuario) */
+.header-actions {
+    display: flex;
+    align-items: center;
+}
+
+.language-select {
+    background-color: transparent;
+    border: 1px solid black;
+    padding: 5px 10px;
+    margin-right: 20px;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+.cta-button {
+    background-color: rgb(0, 0, 0);
+    border: none;
+    margin: 4px;
+    padding: 10px 20px;
+    color: white;
+    font-size: 0.9rem;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #333;
+}
+
+/* Estilo del icono de usuario */
+.user-icon {
+    color: black;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.user-icon:hover {
+    color: #999;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    color: white;
+}
+
+.validate-transaction {
+    display: flex;
+    position: relative;
+    align-items: center;
+    gap: 10px;
+}
+
+.container-transaction-id {
+    width: 350px;
+    left: 0;
+    display: flex;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #ececec;
+    top: 50px;
+    gap: 4%;
+    position: absolute;
+}
+
+.input-transaction-id {
+    height: 40px;
+    border: none;
+    background-color: #ffffff;
+    font-size: 18px;
+    width: 75%;
+}
+
+.input-transaction-id:focus {
+    border: none;
+}
+
+
+.button-verify-transaction {
+    background-color: #000000;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .1s;
+    width: 21%;
+}
+
+.button-verify-transaction:hover {
+    background-color: #3d3d3d;
+}

@@ -1,0 +1,220 @@
+.container-forms {
+    display: flex;
+    height: 100vh;
+    background-color: #1b1b1b;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+}
+
+.container-background-image {
+    width: 80%;
+    height: 100vh;
+    background-color: #ffffff;
+}
+
+.background-image-form {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+
+.container {
+    background-color: #ffffff;
+    width: 30%;
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.header-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 9px;
+    width: 100%;
+}
+
+.text {
+    color: #252525;
+    font-size: 45px;
+    font-weight: 600;
+}
+
+.underline {
+    width: 10%;
+    height: 1px;
+    background: #fafafa;
+    border-radius: 9px;
+}
+
+.inputs {
+    display: flex;
+    width: 80%;
+    margin-top: 40px;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+
+.input-form {
+    width: 70%;
+    height: 40px;
+    border: none;
+    border-bottom: 2px solid rgb(197, 197, 197);
+    border-radius: 2px;
+    color: #2b2b2b;
+    font-size: 20px;
+    padding-left: 10px;
+    transition: all .1s;
+    outline: none;
+}
+
+.input-form::placeholder {
+    font-size: 17px;
+}
+
+.input-form:focus {
+    border: none;
+    border-bottom: 2px solid #1b1b1b;
+}
+
+.forgot-password {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #474850;
+    cursor: pointer;
+    font-size: 17px;
+    transition: all 0.4s;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+
+.submit-container {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.submit {
+    justify-content: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    border-radius: 3px;
+    height: 35px;
+    background: #000000;
+    color: #fff;
+    font-size: 19px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+
+
+
+#container_error {
+    color: #ff0033;
+    text-align: center;
+    font-size: 18px;
+}
+
+.form-loader {
+    height: 30px;
+    margin: 0 auto;
+    width: 30px;
+    border: 2px solid #000000;
+}
+
+.icon-logo-form {
+    bottom: 10px;
+    right: 20px;
+    position: absolute;
+}
+
+/* ----------------------------------------------sing up--------------------------------------------------*/
+
+.container_signup {
+    background-color: #fff;
+    width: 30%;
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+select {
+    background-color: #ffffff;
+}
+
+.container-steps {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    height: 500px;
+}
+
+.container-buttons {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.inputs-steps p {
+    width: 70%;
+    text-align: justify;
+    color: #494949;
+}
+
+.inputs-steps {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    height: 330px;
+}
+
+
+#container_error_signup {
+    color: #ff0033;
+    text-align: center;
+    margin-top: 15px;
+    font-size: 18px;
+}
+
+.terminosCondiciones {
+    color: #3b3b3b;
+    text-align: center;
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+
+.has-account p {
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    flex-direction: row;
+    text-wrap: nowrap;
+}

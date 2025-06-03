@@ -1,0 +1,86 @@
+/* Estilo del contenedor principal */
+.container-comprobante {
+    height: 100vh;
+}
+
+.comprobante {
+    width: 100%;
+    position: relative;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    min-height: 700px;
+
+    background-color: #fdfdfd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+    border: none;
+    border-bottom: 10px dotted rgb(223, 223, 223);
+}
+
+.share-icon {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+/* Estilo para el encabezado */
+.comprobante-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.comprobante-header h2 {
+    font-size: 24px;
+    color: #333;
+}
+
+.comprobante-subtitle {
+    font-size: 16px;
+    color: #666;
+}
+
+/* Detalles del comprobante */
+.comprobante-details {
+    margin-bottom: 20px;
+}
+
+.comprobante-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0;
+    box-sizing: border-box;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.comprobante-label {
+    font-weight: bold;
+    color: #333;
+}
+
+.comprobante-value {
+    color: #555;
+    font-size: 16px;
+}
+
+/* Estilo del estado del pago */
+.comprobante-footer {
+    text-align: center;
+}
+
+.comprobante-status {
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+}
+
+.comprobante-status.pagado {
+    background-color: #3a803d;
+}
+
+.comprobante-status.pendiente {
+    background-color: #FF9800;
+}

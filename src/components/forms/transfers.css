@@ -1,0 +1,114 @@
+.transfers-container {
+  width: 100%;
+  height: 100vh;
+  margin: 0 auto;
+  padding: 20px;
+  background-image: url('https://img.freepik.com/free-vector/paper-style-wavy-background_23-2149116137.jpg?t=st=1733614756~exp=1733618356~hmac=090fd8a079fc0425ca2e295b2f580cf491182905171496cdc1b574e36a5a53be&w=1380');
+  display: flex;
+  background-repeat: round;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.container-form-transfers {
+  display: flex;
+  position: relative;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+  justify-content: center;
+  border-radius: 10px;
+  box-sizing: border-box;
+  padding: 50px;
+  width: min-content;
+  height: 670px;
+  background-color: #ffffff;
+}
+
+.transfers-container h2 {
+  text-align: center;
+  font-size: 30px;
+}
+
+.transfers-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.back-icon {
+  position: absolute;
+  top: 20px;
+  cursor: pointer;
+  left: 20px;
+}
+
+
+.transfers-container button {
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.transfers-container button:hover {
+  background-color: #0056b3;
+}
+
+/* Estilos adicionales copiados de Forms.css */
+.form-group {
+  width: 400px;
+  display: flex;
+  text-wrap: nowrap;
+  flex-direction: column;
+  align-items: start;
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  width: 0;
+}
+
+.input-form-transfer {
+  width: 100%;
+  height: 45px;
+  font-size: 20px;
+  padding: 10px;
+  border: none;
+  border-bottom: 2px solid #e4e4e4;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.text-area {
+  min-height: 70px;
+  max-height: 90px;
+  min-width: 100%;
+}
+
+.input-form-transfer:focus,
+.text-area:focus {
+  outline: none;
+  border: none;
+  border-bottom: 2px solid #e4e4e4;
+}
+
+
+.form-actions {
+  text-align: center;
+}
+
+.form-actions button {
+  padding: 10px 30px;
+  background-color: #161616;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.form-actions button:hover {
+  background-color: #0056b3;
+}
